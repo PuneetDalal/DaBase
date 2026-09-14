@@ -7,6 +7,7 @@
 
 class pager{
     private:
+        static constexpr size_t PAGE_SIZE = 8192;
         std::fstream dbfile;
         std:: unordered_map <uint32_t,uint8_t*> page_cache;
     public:
